@@ -9,9 +9,9 @@
                 <label for="title" class="form-label">Title</label>
                 <input type="text" class="form-control" name="title" id="title" aria-describedby="titleHelp">
             </div>
-            <div class="mb-3">
+            <div class="mb-3 d-flex flex-column">
                 <label for="description" class="form-label">Description</label>
-                <textarea name="description" id="description" cols="30" rows="10">
+                <textarea name="description" id="description" cols="30" rows="10"></textarea>
             </div>
             <div class="mb-3">
                 <label for="type" class="form-label">Image</label>
@@ -29,7 +29,6 @@
             <div class="mb-3">
                 <label for="type" class="form-label">Type</label>
                 <input type="text" class="form-control" name="type" id="type" aria-describedby="typeHelp">
-            </textarea>
             </div>
             <button type="submit" class="btn btn-primary">Send</button>
             <button type="reset" class="btn btn-primary">Reset</button>

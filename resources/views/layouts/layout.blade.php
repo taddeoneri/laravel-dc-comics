@@ -21,14 +21,14 @@
     <main>
         @yield('content')
         <div class="main-bottom text-uppercase py-5 text-light">
-            <div class="container d-flex justify-content-between">
+            {{-- <div class="container d-flex justify-content-between">
                 @foreach ($items as $i)
                     <div class="d-flex align-items-center">
-                        <img src="/img/{{ $i->url }}" alt="{{ $i->text }}">
-                        <p class="m-0">{{ $i->text }}</p>
+                        <img src="/img/{{ $i['url'] }}" alt="{{ $i['text'] }}">
+                        <p class="m-0">{{ $i['url'] }}</p>
                     </div>
                 @endforeach
-            </div>
+            </div> --}}
         </div>
     </main>
 
