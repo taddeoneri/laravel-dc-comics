@@ -39,7 +39,7 @@
                 <p class="m-0 text-primary text-uppercase fw-bold mx-2">Follow us</p>
                 <div class="d-flex">
                     @foreach ($socials as $social)
-                        <img class="ms-3" src="/img/{{ $social['path'] }}" alt="{{ $social['alt'] }}">
+                        <img class="ms-3" src="/img/{{ $social->path }}" alt="{{ $social->alt }}">
                     @endforeach
                 </div>
             </div>

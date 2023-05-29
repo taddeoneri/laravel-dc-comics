@@ -5,7 +5,7 @@
         </div>
         <ul class="d-flex m-0">
             @foreach ($navbar as $nav)
-                <li class="ms-4"><a href="route('comics')">{{$nav['text']}}</a></li>
+                <li class="ms-4"><a href="route('comics')">{{ $nav->text }}</a></li>
             @endforeach
         </ul>
     </div>
