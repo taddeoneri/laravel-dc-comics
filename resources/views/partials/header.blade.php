@@ -1,4 +1,4 @@
-{{-- <header class="bg-light text-uppercase">
+<header class="bg-light text-uppercase">
     <div class="container bg-light d-flex justify-content-between align-items-center py-3">
         <div>
             <img src="/img/dc-logo.png" alt="Logo">
@@ -12,4 +12,4 @@
     <div class="jumbo overflow-hidden">
         <img class="img-fluid" src="/img/jumbotron.jpg" alt="Jumbotron">
     </div>
-</header> --}}
+</header>

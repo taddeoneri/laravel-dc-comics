@@ -1,4 +1,4 @@
-{{-- <footer>
+<footer>
     <div class="footer-top overflow-hidden">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="d-flex">
@@ -45,4 +45,4 @@
             </div>
         </div>
     </div>
-</footer> --}}
+</footer>

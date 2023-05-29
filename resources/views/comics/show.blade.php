@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="my-5 container">
-        {{-- <a href="{{ route('comics') }}">Lista film</a> --}}
+        <a href="{{ route('comics.index') }}">Lista film</a>
         <h1 class="py-5 text-center ">{{ $comic['title'] }}</h1>
         <div class="row">
             <div class="col-4">

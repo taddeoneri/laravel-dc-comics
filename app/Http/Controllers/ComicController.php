@@ -15,8 +15,18 @@ class ComicController extends Controller
      */
     public function index()
     {
-        $comics = Comic::all();
-        return view('comics.index', compact('comics'));
+        $data = [
+            'comics' => Comic::all(),
+            'navbar' => config('db.navbar'),
+            'items' => config('db.items'),
+            'dcComics' => config('db.dcComics'),
+            'shop' => config('db.shop'),
+            'dc' => config('db.dc'),
+            'sites' => config('db.sites'),
+            'socials' => config('db.socials')
+        ];
+
+        return view('comics.index', $data);
     }
 
     /**
@@ -52,7 +62,16 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        return view('comics.show', compact('comic'));
+        $data = [
+            'navbar' => config('db.navbar'),
+            'items' => config('db.items'),
+            'dcComics' => config('db.dcComics'),
+            'shop' => config('db.shop'),
+            'dc' => config('db.dc'),
+            'sites' => config('db.sites'),
+            'socials' => config('db.socials')
+        ];
+        return view('comics.show', $data, compact('comic'));
     }
 
     /**
