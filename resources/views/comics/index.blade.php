@@ -9,14 +9,14 @@
                     @method('DELETE')
                     <button type="submit" class="delete-button btn btn-danger mb-3">Delete</button>
                 </form>
-                <a href="{{ route('comics.show', $comic->id) }}">
-                    <div class="mycard m-0">
+                <div class="mycard m-0">
+                    <a href="{{ route('comics.show', $comic->id) }}">
                         <img src="{{ $comic['thumb'] }}" class="img-fluid" alt="{{$comic['title']}}">
-                    </div>
-                    <div>
-                        <p class="text-uppercase">{{ $comic['title'] }}</p>
-                    </div>
-                </a>
+                    </a>
+                </div>
+                <div>
+                    <p class="text-uppercase">{{ $comic['title'] }}</p>
+                </div>
             </div>
         @endforeach
     </div>
