@@ -1,7 +1,7 @@
 @extends('layouts.layout');
 
 @section('content')
-    <section class="container">
+    <section class="container py-4">
         <h1>Enter a new comic</h1>
         <form action="{{ route('comics.store') }}" method="POST">
             @csrf

@@ -35,7 +35,17 @@ class ComicController extends Controller
      */
     public function create()
     {
-        return view('comics.create');
+        $data = [
+            'comics' => Comic::all(),
+            'navbar' => config('db.navbar'),
+            'items' => config('db.items'),
+            'dcComics' => config('db.dcComics'),
+            'shop' => config('db.shop'),
+            'dc' => config('db.dc'),
+            'sites' => config('db.sites'),
+            'socials' => config('db.socials')
+        ];
+        return view('comics.create', $data);
     }
 
     /**
