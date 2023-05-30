@@ -90,7 +90,17 @@ class ComicController extends Controller
      */
     public function edit(Comic $comic)
     {
-        return view('comics.edit', compact('comic'));
+        $data = [
+            'comics' => Comic::all(),
+            'navbar' => config('db.navbar'),
+            'items' => config('db.items'),
+            'dcComics' => config('db.dcComics'),
+            'shop' => config('db.shop'),
+            'dc' => config('db.dc'),
+            'sites' => config('db.sites'),
+            'socials' => config('db.socials')
+        ];
+        return view('comics.edit', $data, compact('comic'));
     }
 
     /**

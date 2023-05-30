@@ -20,5 +20,5 @@
             </div>
         @endforeach
     </div>
-    <a class="btn btn-warning" href="{{ route('comics.create')}}">Create a new comic</a>
+    <a class="btn btn-success" href="{{ route('comics.create')}}">Create a new comic</a>
 @endsection

@@ -1,9 +1,10 @@
-@extends('layouts.layout');
+@extends('layouts.layout')
 
 @section('content')
-    <section class="container">
-        <h1>Edit comic with id: {{ $comic->id }}</h1>
-        <form action="{{ route('comics.store') }}" method="POST">
+    <section class="container py-4">
+        <a class="pb-3 d-block" href="{{ route('comics.index') }}">Comics list</a>
+        <h1>Edit '{{ $comic->title }}' comic</h1>
+        <form action="{{ route('comics.update', $comic->id) }}" method="POST">
             @csrf
             @method('PUT')
             <div class="mb-3">
